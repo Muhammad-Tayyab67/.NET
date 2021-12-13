@@ -46,3 +46,18 @@ namespace storedprogramibily
         }
     }
 }
+//MSSM-DB-STOREDPROCETURE
+
+CREATE Procedure [dbo].[lms]
+
+
+@firstname VARCHAR(50),
+@lastname VARCHAR(50),
+@dept VARCHAR(50),
+@email VARCHAR(50),
+@pass VARCHAR(50)
+AS
+INSERT INTO student2 values (@firstname,@lastname,@dept,@email,@pass)
+return 0 
+
+
